@@ -1,0 +1,47 @@
+# register
+POST http://localhost:8081/api/auth/register
+content-type: application/json
+
+{
+    "username": "joey",
+    "password": "12345"
+}
+
+# login
+POST http://localhost:8081/api/auth/login
+content-type: application/json
+
+{
+    "username": "joey",
+    "password": "12345"
+}
+
+# logout
+GET http://localhost:8081/api/auth/logout
+
+# get notes
+GET http://localhost:8081/api/notes
+
+# create note
+POST http://localhost:8081/api/note
+content-type: application/json
+
+{
+    "text": "My first new note"
+}
+
+# update note
+PUT http://localhost:8081/api/note
+content-type: application/json
+
+{
+    "text: "I updated my first new note",
+    "id":
+}
+
+# delete note
+DELETE http://localhost:8081/api/note
+content-type: application/json
+{
+    id:
+}
