@@ -15,27 +15,32 @@ router.post('/register', async (req, res) => {
                 throw err
             }
         })
-        response.success(res, user.username, 200)
+        return response.success(res, user.username, 200)
     } catch (e) {
-        response.failure(res, e.message, 500)
+        return response.failure(res, e.message, 500)
     }
 })
 
 router.post('/login', async (req, res) => {
     try {
-        req.login()
-        response.success(res, {}, 200)
+        var user = await authSvc.login(req.body)
+        req.login(user, (err) => {
+            if (err) {
+                throw err
+            }
+        })
+        return response.success(res, {}, 200)
     } catch (e) {
-        response.failure(res, e.message, 500)
+        return response.failure(res, e.message, 500)
     }
 })
 
 router.get('/logout', async (req, res) => {
     try {
         req.logout()
-        response.success(res, {}, 200)
+        return response.success(res, {}, 200)
     } catch (e) {
-        response.failure(res, e.message, 500)
+        return response.failure(res, e.message, 500)
     }
 })
 

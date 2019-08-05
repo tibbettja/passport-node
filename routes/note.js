@@ -7,39 +7,39 @@ router.use('/', (req, res, next) => {
     next()
 })
 
-router.get('/notes', async (req, res) => {
+router.get('/all', async (req, res) => {
     try {
         var notes = await noteSvc.getNotes(req.user)
-        response.success(res, notes, 200)
+        return response.success(res, notes, 200)
     } catch (e) {
-        response.failure(res, e.message, 500)
+        return response.failure(res, e.message, 500)
     }
 })
 
-router.post('/note', async (req, res) => {
+router.post('/create', async (req, res) => {
     try {
         var reult = await noteSvc.createNote(req.user, req.body)
-        response.success(res, result, 200)
+        return response.success(res, result, 200)
     } catch (e) {
-        response.failure(res, e.message, 500)
+        return response.failure(res, e.message, 500)
     }
 })
 
-router.put('/note', async (req, res) => {
+router.post('/update', async (req, res) => {
     try {
         await noteSvc.updateNote(req.user, req.body)
-        response.success(res, undefined, 200)
+        return response.success(res, undefined, 200)
     } catch (e) {
-        response.failure(res, e.message, 500)
+        return response.failure(res, e.message, 500)
     }
 })
 
-router.delete('/note', async (req, res) => {
+router.post('/delete', async (req, res) => {
     try {
         await noteSvc.deleteNote(req.user, req.body)
-        response.success(res, undefined, 200)
+        return response.success(res, undefined, 200)
     } catch (e) {
-        response.failure(res, e.message, 500)
+        return response.failure(res, e.message, 500)
     }
 })
 

@@ -13,14 +13,12 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             unique: true
         },
-        password: DataTypes.STRING
+        password: DataTypes.STRING(256)
     }, {
         sequelize,
         modelName: 'User',
         hooks: {
-            beforeCreate: hashPassword,
-            beforeSave: hashPassword,
-            beforeUpdate: hashPassword
+            beforeCreate: hashPassword
         }
     })
     User.prototype.comparePassword = function (password) {
