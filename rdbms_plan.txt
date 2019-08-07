@@ -1,0 +1,74 @@
+-------------------------------------
++ User
+-------------------------------------
+| username                          
+| password                          
+-------------------------------------
+A User may have many Character_Sheet
+
+
+-------------------------------------
++ Character_Sheet
+-------------------------------------
+| name                              
+| level
+| experience
+| dci_number
+| strength
+| dexterity
+| constitution
+| intelligence
+| wisdom
+| charisma
+| inspiration
+| proficiency_bonus
+| armor_class
+| initiative
+| speed
+| current_hp
+| maximum_hp
+| temporary_hp
+| hit_dice
+| success_flag_1
+| success_flag_2
+| success_flag_3
+| failure_flag_1
+| failure_flag_2
+| failure_flag_3
+| passive_perception
+| money_1
+| money_2
+| money_3
+| money_4
+| money_5
+| age
+| height
+| weight
+| eyes
+| skin
+| hair
+| image
+| backstory
+| faction_rank
+| magic_item_count
+-------------------------------------
+A Character_Sheet must have 1 or may have many Class
+A Character_Sheet must have 1 Background
+A Character_Sheet must have 1 Faction
+A Character_Sheet must have 1 Race
+A Character_Sheet must have 1 Alignment
+A Character_Sheet must have 5 Saving_Throw
+A Character_Sheet must have 18 Skill
+A Character_Sheet may have many Personality_Trait
+A Character_Sheet may have many Ideal
+A Character_Sheet may have many Bond
+A Character_Sheet may have many Flaw
+A Character_Sheet must have 1 or may have many Attack
+A Character_Sheet may have many Proficiency
+A Character_Sheet may have many Language
+A Character_Sheet may have many Equipment
+A Character_Sheet may have many Trait
+A Character_Sheet may have many Ally
+A Character_Sheet may have many Organization
+A Character_Sheet may have many Additional_Feature
+A Character_Sheet may have many Treasure
