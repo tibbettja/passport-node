@@ -29,7 +29,7 @@ router.post('/login', async (req, res) => {
                 throw err
             }
         })
-        return response.success(res, {}, 200)
+        return response.success(res, undefined, 200)
     } catch (e) {
         return response.failure(res, e.message, 500)
     }
@@ -38,7 +38,7 @@ router.post('/login', async (req, res) => {
 router.get('/logout', async (req, res) => {
     try {
         req.logout()
-        return response.success(res, {}, 200)
+        return response.success(res, undefined, 200)
     } catch (e) {
         return response.failure(res, e.message, 500)
     }

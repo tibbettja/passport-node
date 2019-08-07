@@ -7,6 +7,14 @@ router.use('/', (req, res, next) => {
     next()
 })
 
+router.use('/', (req, res, next) => {
+    if (req.user !== undefined) {
+        next()
+    } else {
+        return response.failure(res, 'Unauthorized', 401)
+    }
+})
+
 router.get('/all', async (req, res) => {
     try {
         var notes = await noteSvc.getNotes(req.user)
@@ -18,7 +26,7 @@ router.get('/all', async (req, res) => {
 
 router.post('/create', async (req, res) => {
     try {
-        var reult = await noteSvc.createNote(req.user, req.body)
+        var result = await noteSvc.createNote(req.user, req.body)
         return response.success(res, result, 200)
     } catch (e) {
         return response.failure(res, e.message, 500)

@@ -35,13 +35,14 @@ POST http://localhost:8081/api/note/update
 content-type: application/json
 
 {
-    "text: "I updated my first new note",
-    "id":
+    "text": "I updated my first new note",
+    "id": 1
 }
 
 # delete note
 POST http://localhost:8081/api/note/delete
 content-type: application/json
+
 {
-    id:
+    "id": 1
 }
