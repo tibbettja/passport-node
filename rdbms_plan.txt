@@ -72,3 +72,149 @@ A Character_Sheet may have many Ally
 A Character_Sheet may have many Organization
 A Character_Sheet may have many Additional_Feature
 A Character_Sheet may have many Treasure
+A Character_Sheet may have many Bonus_Action
+
+-------------------------------------
++ Class
+-------------------------------------
+| name
+| base_hp
+| hp_modifier
+| proficiency_bonus
+| description
+| image
+-------------------------------------
+A Class may many Proficiency
+A Class may many Saving_Throw
+A Class may have many Skill
+A Class may have Equipment
+A Class may have many Bonus_Action
+A Class may have many Trait
+A Class may have many Level
+A Class may have many SubClass
+
+
+-------------------------------------
++ SubClass
+-------------------------------------
+| name
+| description
+| image
+-------------------------------------
+A SubClass must have 1 Class
+A SubClass may have many Level
+
+
+-------------------------------------
++ Background
+-------------------------------------
+| name
+| description
+| image
+-------------------------------------
+
+
+-------------------------------------
++ Faction
+-------------------------------------
+| name
+| description
+| image
+-------------------------------------
+
+-------------------------------------
++ Race
+-------------------------------------
+| name
+| description
+| image
+| strength
+| charisma
+| wisdom
+| intelligence
+| constitution
+| dexterity
+| height_1
+| height_2
+| weight_1
+| weight_2
+| size
+| speed_base
+| heavy_reduction
+| vision_light
+| vision_dim
+| vision_dark
+| age_grown
+| age_adult
+| age_old
+-------------------------------------
+A Race may have 1 Alignment
+A Race may have many Language
+A Race may have many SubRace
+A Race may have many Trait
+A Race may have many Saving_Throw
+A Race may have many Resistance
+A Race may have many Proficiency
+A Race may have many Skill
+A Race may have many Sleep
+
+
+-------------------------------------
++ SubRace
+-------------------------------------
+| name
+| description
+| image
+| wisdom
+| strength
+| constitution
+| dexterity
+| charisma
+| maximum_hp
+-------------------------------------
+A SubRace may have many Attack
+A SubRace may have many Level
+A SubRace may have many Trait
+A SubRace may have many Proficiency
+A SubRace may have many Skill
+A SubRace may have many Hide
+A SubRace may have many Language
+
+
+-------------------------------------
++ Alignment
+-------------------------------------
+| name
+| description
+| image
+-------------------------------------
+
+-------------------------------------
++ Saving_Throw
+-------------------------------------
+| name
+| description
+| image
+-------------------------------------
+
+-------------------------------------
++ Faction
+-------------------------------------
+| name
+| description
+| image
+-------------------------------------
+
+-------------------------------------
++ Faction
+-------------------------------------
+| name
+| description
+| image
+-------------------------------------
+
+
+-------------------------------------
++ 
+-------------------------------------
+-------------------------------------
