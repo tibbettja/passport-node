@@ -1,220 +1,322 @@
 -------------------------------------
 + User
--------------------------------------
-| username                          
-| password                          
--------------------------------------
-A User may have many Character_Sheet
+    -------------------------------------
+    | username                          
+    | password                          
+    -------------------------------------
+    A User may have many Character_Sheet
 
 
 -------------------------------------
 + Character_Sheet
--------------------------------------
-| name                              
-| level
-| experience
-| dci_number
-| strength
-| dexterity
-| constitution
-| intelligence
-| wisdom
-| charisma
-| inspiration
-| proficiency_bonus
-| armor_class
-| initiative
-| speed
-| current_hp
-| maximum_hp
-| temporary_hp
-| hit_dice
-| success_flag_1
-| success_flag_2
-| success_flag_3
-| failure_flag_1
-| failure_flag_2
-| failure_flag_3
-| passive_perception
-| money_1
-| money_2
-| money_3
-| money_4
-| money_5
-| age
-| height
-| weight
-| eyes
-| skin
-| hair
-| image
-| backstory
-| faction_rank
-| magic_item_count
--------------------------------------
-A Character_Sheet must have 1 or may have many Class
-A Character_Sheet must have 1 Background
-A Character_Sheet must have 1 Faction
-A Character_Sheet must have 1 Race
-A Character_Sheet must have 1 Alignment
-A Character_Sheet must have 5 Saving_Throw
-A Character_Sheet must have 18 Skill
-A Character_Sheet may have many Personality_Trait
-A Character_Sheet may have many Ideal
-A Character_Sheet may have many Bond
-A Character_Sheet may have many Flaw
-A Character_Sheet must have 1 or may have many Attack
-A Character_Sheet may have many Proficiency
-A Character_Sheet may have many Language
-A Character_Sheet may have many Equipment
-A Character_Sheet may have many Trait
-A Character_Sheet may have many Ally
-A Character_Sheet may have many Organization
-A Character_Sheet may have many Additional_Feature
-A Character_Sheet may have many Treasure
-A Character_Sheet may have many Bonus_Action
+    -------------------------------------
+    | name                              
+    | level
+    | experience
+    | dci_number
+    | strength
+    | dexterity
+    | constitution
+    | intelligence
+    | wisdom
+    | charisma
+    | inspiration
+    | proficiency_bonus
+    | armor_class
+    | initiative
+    | speed
+    | current_hp
+    | maximum_hp
+    | temporary_hp
+    | hit_dice
+    | success_flag_1
+    | success_flag_2
+    | success_flag_3
+    | failure_flag_1
+    | failure_flag_2
+    | failure_flag_3
+    | passive_perception
+    | money_1
+    | money_2
+    | money_3
+    | money_4
+    | money_5
+    | age
+    | height
+    | weight
+    | eyes
+    | skin
+    | hair
+    | image
+    | backstory
+    | faction_rank
+    | magic_item_count
+    -------------------------------------
+    A Character_Sheet must have 1 or may have many Class
+    A Character_Sheet must have 1 Background
+    A Character_Sheet must have 1 Faction
+    A Character_Sheet must have 1 Race
+    A Character_Sheet must have 1 Alignment
+    A Character_Sheet must have 5 Saving_Throw
+    A Character_Sheet must have 18 Skill
+    A Character_Sheet may have many Personality_Trait
+    A Character_Sheet may have many Ideal
+    A Character_Sheet may have many Bond
+    A Character_Sheet may have many Flaw
+    A Character_Sheet must have 1 or may have many Attack
+    A Character_Sheet may have many Proficiency
+    A Character_Sheet may have many Language
+    A Character_Sheet may have many Equipment
+    A Character_Sheet may have many Trait
+    A Character_Sheet may have many Ally
+    A Character_Sheet may have many Organization
+    A Character_Sheet may have many Additional_Feature
+    A Character_Sheet may have many Treasure
+    A Character_Sheet may have many Bonus_Action
+
 
 -------------------------------------
 + Class
--------------------------------------
-| name
-| base_hp
-| hp_modifier
-| proficiency_bonus
-| description
-| image
--------------------------------------
-A Class may many Proficiency
-A Class may many Saving_Throw
-A Class may have many Skill
-A Class may have Equipment
-A Class may have many Bonus_Action
-A Class may have many Trait
-A Class may have many Level
-A Class may have many SubClass
+    -------------------------------------
+    | name
+    | base_hp
+    | hp_modifier
+    | proficiency_bonus
+    | description
+    | image
+    -------------------------------------
+    A Class may many Proficiency
+    A Class may many Saving_Throw_Advantage
+    A Class may have many Skill
+    A Class may have Equipment
+    A Class may have many Bonus_Action
+    A Class may have many Trait
+    A Class may have many Level
+    A Class may have many SubClass
 
 
 -------------------------------------
 + SubClass
--------------------------------------
-| name
-| description
-| image
--------------------------------------
-A SubClass must have 1 Class
-A SubClass may have many Level
+    -------------------------------------
+    | name
+    | description
+    | image
+    -------------------------------------
+    A SubClass must have 1 Class
+    A SubClass may have many Level
 
 
 -------------------------------------
 + Background
--------------------------------------
-| name
-| description
-| image
--------------------------------------
+    -------------------------------------
+    | name
+    | description
+    | image
+    -------------------------------------
 
 
 -------------------------------------
 + Faction
--------------------------------------
-| name
-| description
-| image
--------------------------------------
+    -------------------------------------
+    | name
+    | description
+    | image
+    -------------------------------------
+
 
 -------------------------------------
 + Race
--------------------------------------
-| name
-| description
-| image
-| strength
-| charisma
-| wisdom
-| intelligence
-| constitution
-| dexterity
-| height_1
-| height_2
-| weight_1
-| weight_2
-| size
-| speed_base
-| heavy_reduction
-| vision_light
-| vision_dim
-| vision_dark
-| age_grown
-| age_adult
-| age_old
--------------------------------------
-A Race may have 1 Alignment
-A Race may have many Language
-A Race may have many SubRace
-A Race may have many Trait
-A Race may have many Saving_Throw
-A Race may have many Resistance
-A Race may have many Proficiency
-A Race may have many Skill
-A Race may have many Sleep
+    -------------------------------------
+    | name
+    | description
+    | image
+    | strength
+    | charisma
+    | wisdom
+    | intelligence
+    | constitution
+    | dexterity
+    | height_1
+    | height_2
+    | weight_1
+    | weight_2
+    | size
+    | speed_base
+    | heavy_reduction
+    | vision_light
+    | vision_dim
+    | vision_dark
+    | age_grown
+    | age_adult
+    | age_old
+    -------------------------------------
+    A Race may have 1 Alignment
+    A Race may have many Language
+    A Race may have many SubRace
+    A Race may have many Trait
+    A Race may have many Saving_Throw_Advantage
+    A Race may have many Resistance
+    A Race may have many Proficiency
+    A Race may have many Skill
+    A Race may have many Sleep
 
 
 -------------------------------------
 + SubRace
--------------------------------------
-| name
-| description
-| image
-| wisdom
-| strength
-| constitution
-| dexterity
-| charisma
-| maximum_hp
--------------------------------------
-A SubRace may have many Attack
-A SubRace may have many Level
-A SubRace may have many Trait
-A SubRace may have many Proficiency
-A SubRace may have many Skill
-A SubRace may have many Hide
-A SubRace may have many Language
+    -------------------------------------
+    | name
+    | description
+    | image
+    | wisdom
+    | strength
+    | constitution
+    | dexterity
+    | charisma
+    | maximum_hp
+    -------------------------------------
+    A SubRace may have many Attack
+    A SubRace may have many Level
+    A SubRace may have many Trait
+    A SubRace may have many Proficiency
+    A SubRace may have many Skill
+    A SubRace may have many Hide
+    A SubRace may have many Language
 
 
 -------------------------------------
 + Alignment
--------------------------------------
-| name
-| description
-| image
--------------------------------------
+    -------------------------------------
+    | name
+    | description
+    | image
+    | goodness
+    | trend
+    -------------------------------------
+
 
 -------------------------------------
 + Saving_Throw
--------------------------------------
-| name
-| description
-| image
--------------------------------------
+    -------------------------------------
+    | name
+    | description
+    | modifier
+    | active
+    -------------------------------------
+
 
 -------------------------------------
 + Faction
--------------------------------------
-| name
-| description
-| image
--------------------------------------
-
--------------------------------------
-+ Faction
--------------------------------------
-| name
-| description
-| image
--------------------------------------
+    -------------------------------------
+    | name
+    | description
+    | image
+    -------------------------------------
 
 
 -------------------------------------
-+ 
++ Level
+    -------------------------------------
+    | name
+    | description
+    | image
+    | maximum_hp
+    | hp_modifier
+    | ability_score_improvement
+    | speed_base
+    | heavy_reduction
+    -------------------------------------
+    A Level may have many Proficiency
+    A Level may have many Trait
+    A Level may have many Skill
+    A Level may have a Specialty
+    A Level may have many Language
+
+
+
 -------------------------------------
++ Skill
+    -------------------------------------
+    | name
+    | modifier
+    | trained
+    | description
+    | image
+    -------------------------------------
+
+
 -------------------------------------
++ Personality_Trait
+    -------------------------------------
+    | name
+    | description
+    -------------------------------------
+
+
+-------------------------------------
++ Ideal
+    -------------------------------------
+    | name
+    | description
+    | image
+    -------------------------------------
+
+
+-------------------------------------
++ Bond
+    -------------------------------------
+    | name
+    | description
+    | image
+    -------------------------------------
+
+
+-------------------------------------
++ Flaw
+    -------------------------------------
+    | name
+    | description
+    | image
+    -------------------------------------
+
+
+-------------------------------------
++ Attack
+    -------------------------------------
+    | name
+    | description
+    | image
+    | attack_bonus
+    | damage
+    -------------------------------------
+    A Attack must have 1 and may have many Attack_Type
+    A Attack must have 1 and may have many Weapon
+
+
+-------------------------------------
++ Proficiency
+    -------------------------------------
+    | name
+    | description
+    -------------------------------------
+    A Proficiency must have 1 Item
+
+
+-------------------------------------
++ Item
+    -------------------------------------
+    | name
+    | description
+    | image
+    | proficiency_needed
+    -------------------------------------
+    A Item may have 1 Armor
+    A Item may have 1 Weapon
+
+
+-------------------------------------
++ Weapon
+    -------------------------------------
+    | name
+    | description
+    | image
+    | 
