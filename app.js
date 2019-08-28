@@ -17,10 +17,11 @@ app.use(express.static(path.join(__dirname, config.pathToStatic)))
 
 app.use(bodyParser.json())
 app.use(cookieParser())
-app.use(session({ secret: config.sessionSecret }))
+app.use(session({ secret: config.sessionSecret, resave: true, saveUninitialized: true }))
 
 app.use(passport.initialize())
 app.use(passport.session())
+app.use(require('cors')({ origin: ['http://localhost:8080'], credentials: true }))
 
 passport.use(new LocalStrategy((username, password, done) => {
     User.findOne({ username}, (err, user) => {

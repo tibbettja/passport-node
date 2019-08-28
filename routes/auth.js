@@ -15,7 +15,7 @@ router.post('/register', async (req, res) => {
                 throw err
             }
         })
-        return response.success(res, user.username, 200)
+        return response.success(res, { username: user.username }, 200)
     } catch (e) {
         return response.failure(res, e.message, 500)
     }
@@ -29,9 +29,9 @@ router.post('/login', async (req, res) => {
                 throw err
             }
         })
-        return response.success(res, undefined, 200)
+        return response.success(res, { username: user.username }, 200)
     } catch (e) {
-        return response.failure(res, e.message, 500)
+        return response.failure(res, 'Incorrect Username or Password', 401)
     }
 })
 

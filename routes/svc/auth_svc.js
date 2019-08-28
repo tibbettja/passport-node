@@ -9,8 +9,10 @@ module.exports = {
         var user = await User.findOne({ where: { username }})
         var ret = user.comparePassword(password)
         if (ret) {
+            console.log('Successful log in')
             return user
         } else {
+            console.log('Failed to log in')
             return undefined
         }
     }
